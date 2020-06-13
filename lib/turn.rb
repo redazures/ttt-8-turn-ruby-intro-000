@@ -58,5 +58,5 @@ end
 #puts input_to_index("fag")
 input=gets.strip
 output=input_to_index(input)
-
+toutput=valid_move(output)
 puts output
