@@ -57,7 +57,7 @@ end
 #puts x
 #puts input_to_index("10")
 #puts input_to_index("fag")
-#input=gets.strip
-#puts input
+input=gets.strip
+puts input
 #output = valid_move?(input)
 #puts output
