@@ -61,7 +61,7 @@ end
 #toutput=valid_move(output)
 #puts output
 board=["X"," "," "," "," "," "," "," ","X"]
-output = valid_move?(board,0)
+output = valid_move?(board,1)
 output2 = valid_move?(board,8)
 puts output
 puts output2
