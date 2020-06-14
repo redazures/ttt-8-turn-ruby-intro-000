@@ -34,7 +34,7 @@ end
 def valid_move?(board,index)
   if board[index]==" " && checkint(index)=true
     true
-  else board[index]=="X" || board[index]=="O"
+  else
     false
   end
 end
