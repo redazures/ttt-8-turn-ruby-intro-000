@@ -32,7 +32,7 @@ def checkint(board, index)
 end
 
 def valid_move?(board,index)
-  if board[index]==" " && checkint(index)=true
+  if board[index]==" "
     true
   else
     false
