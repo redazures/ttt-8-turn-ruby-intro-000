@@ -53,13 +53,19 @@ end
 #input=gets.strip
 #output=input_to_index(input)
 #toutput=valid_move(output)
-#puts output
-board=["X"," "," "," "," "," "," "," ","X"]
 #output = valid_move?(board,1)
 #output2 = valid_move?(board,8)
 #output = valid_move?(board,1)
 #output2 = valid_move?(board,9)
-
-
-puts output
-puts output2
+#puts output
+#puts output2
+puts "Please enter 1-9:"
+input=gets.strip
+input_to_index(index)
+while valid_move?(board,index)==false
+  puts "This (#{index}) is not a valid move. Please input correct move"
+  input=gets.strip
+  input_to_index(index)
+end
+move(board,converted_number,"X")
+display_board(board)
