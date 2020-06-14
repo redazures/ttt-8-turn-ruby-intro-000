@@ -60,7 +60,7 @@ end
 #output=input_to_index(input)
 #toutput=valid_move(output)
 #puts output
-board=[" "," "," "," "," "," "," "," ","X"]
+board=["X"," "," "," "," "," "," "," ","X"]
 output = valid_move?(board,0)
 output2 = valid_move?(board,8)
 puts output
