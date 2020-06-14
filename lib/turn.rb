@@ -12,7 +12,7 @@ def turn(board)
   puts "Please enter 1-9:"
   input=gets.strip
   input_to_index(index)
-  
+
   #while valid_move(converted_number)==false
   #  puts "This (#{converted_number}) is not a valid move. Please input correct move"
   #  input_to_index=gets.strip
