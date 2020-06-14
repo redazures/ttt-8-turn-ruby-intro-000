@@ -63,6 +63,6 @@ board=["X"," "," "," "," "," "," "," ","X"]
 #output = valid_move?(board,1)
 #output2 = valid_move?(board,8)
 output = valid_move?(board,-100)
-output2 = valid_move?(board,1)
+output2 = valid_move?(board,9)
 puts output
 puts output2
