@@ -64,8 +64,8 @@ input=gets.strip
 index=input_to_index(input)
 while valid_move?(board,index)==false
   puts "This (#{index}) is not a valid move. Please input correct move"
-  index=gets.strip
-  input_to_index(index)
+  input=gets.strip
+  index=input_to_index(input)
 end
 move(board,converted_number,"X")
 display_board(board)
