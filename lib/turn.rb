@@ -22,18 +22,18 @@ def turn(board)
   #puts 1+converted_number
 end
 
-def valid_move(index)
-  if index >0 && index<10
+def checkint(board, index)
+  if index >0 && index<9
     true
   else
     false
   end
 end
 
-def valid_move?(index)
-  if index >0 && index<9
+def valid_move?(board,index)
+  if board[index]==" " || board[index]==""
     true
-  else
+  else board[index]=="X" || board[index]=="O"
     false
   end
 end
