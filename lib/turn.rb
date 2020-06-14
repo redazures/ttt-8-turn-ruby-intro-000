@@ -23,8 +23,8 @@ def turn(board)
   #puts 1+converted_number
 end
 
-def checkint(board, index)
-  if index <1 && index>8
+def valid_move?(board, index)
+  if index <0 && index>8
     false
   else
     false
