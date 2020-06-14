@@ -11,7 +11,8 @@ end
 def turn(board)
   puts "Please enter 1-9:"
   input=gets.strip
-  valid_move?(input)
+  input_to_index(index)
+  
   #while valid_move(converted_number)==false
   #  puts "This (#{converted_number}) is not a valid move. Please input correct move"
   #  input_to_index=gets.strip
@@ -31,7 +32,7 @@ def checkint(board, index)
 end
 
 def valid_move?(board,index)
-  if board[index]==" "
+  if board[index]==" " && checkint(index)=true
     true
   else board[index]=="X" || board[index]=="O"
     false
