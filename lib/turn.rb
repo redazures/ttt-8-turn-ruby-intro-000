@@ -26,7 +26,9 @@ end
 def valid_move?(board, index)
   if index <0 && index>8
     false
-  else
+  elsif board[index]==" "
+    true
+  else 
     false
   end
 end
