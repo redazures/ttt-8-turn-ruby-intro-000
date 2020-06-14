@@ -11,13 +11,13 @@ end
 def turn(board)
   puts "Please enter 1-9:"
   input=gets.strip
-  input_to_index(index)
+  index=input_to_index(input)
   while valid_move?(board,index)==false
     puts "This (#{index}) is not a valid move. Please input correct move"
     input=gets.strip
-    input_to_index(index)
+    index=input_to_index(input)
   end
-  move(board,converted_number,"X")
+  move(board,index,"X")
   display_board(board)
   #puts 1+converted_number
 end
@@ -59,13 +59,3 @@ end
 #output2 = valid_move?(board,9)
 #puts output
 #puts output2
-puts "Please enter 1-9:"
-input=gets.strip
-index=input_to_index(input)
-while valid_move?(board,index)==false
-  puts "This (#{index}) is not a valid move. Please input correct move"
-  input=gets.strip
-  index=input_to_index(input)
-end
-move(board,index,"X")
-display_board(board)
