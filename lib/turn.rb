@@ -28,7 +28,7 @@ def valid_move?(board, index)
     false
   elsif board[index]==" "
     true
-  else 
+  else
     false
   end
 end
