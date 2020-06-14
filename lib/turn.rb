@@ -24,14 +24,14 @@ def turn(board)
 end
 
 def checkint(board, index)
-  if index >0 && index<9
-    true
+  if index <1 && index>8
+    false
   else
     false
   end
 end
 
-def valid_move?(board,index)
+def empty(board,index)
   if board[index]==" "
     true
   else
