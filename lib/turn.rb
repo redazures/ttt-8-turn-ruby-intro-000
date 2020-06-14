@@ -31,7 +31,7 @@ def checkint(board, index)
 end
 
 def valid_move?(board,index)
-  if board[index]==" " || board[index]==""
+  if board[index]==" "
     true
   else board[index]=="X" || board[index]=="O"
     false
